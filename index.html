@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <!-- meta données pour le navigateur -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="with=device-with, initial-scale=1">
 
-        <!-- méta données pour le SEO -->
-        <title>Reservia</title>
-        <meta name="description" content="">
-        
-        <!-- feuilles de styles -->
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <h1>Reservia</h1>
-    </body>
+<head>
+    <!-- meta données pour le navigateur -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="with=device-with, initial-scale=1" />
+
+    <!-- méta données pour le SEO -->
+    <title>Reservia</title>
+    <meta name="description" content="" />
+
+    <!-- feuilles de styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- kit font awesome-->
+    <script src="https://kit.fontawesome.com/12d18217b6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <nav class="has">
+            <div class="logo-container">
+                <img src="./images/logo/Reservia@3x.png" alt="Logo Reservia" />
+            </div>
+            <a href="#">Hébergements</a>
+            <a href="#">Activités</a>
+            <a href="#">S'inscrire</a>
+        </nav>
+        <h1>Trouvez votre hébergement pour des vaccances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="icone-contenair">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <input class="searchForm" type="search" placeholder="Marseille, France" />
+        <input class="searchButton" type="button" value="button"/>
+        <nav class="filters">
+            <p>Filtres</p>
+            <ul>
+                <li>
+                    <div class="icon-contenaire-filter">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <a href="#">Économique</a>
+                </li>
+                <li>
+                    <div class="icon-contenaure-filter">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <a href="#">Familial</a>
+                </li>
+                <li>
+                    <div class="icon-contenaire-filter">
+                        <i class="fas fa-heart"></i>
+                    </div>   
+                    <a href="#">Romantique</a>
+                </li>
+                <li>
+                    <div class="icone-contenaire-filter">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                   <a href="#">Animaux autorisés</a>
+                </li>
+            </ul>       
+        </nav>
+        <p class="information">Plus de 500 logements sont disponibles dans cette ville</p>
+    </header>
+    <section class="Marseille">
+        <h2>Hébergements à Marseille</h2>
+            <article class="Auberge_la_Cannebière">
+                <a href="#" class="card" title="Auberge la cannebière">
+                 <img src="./images/hebergements/4_small/Auberge_la_Cannebière.jpg" alt="Photo de l'Auberge la Cannbière">
+                 <h3>Auberge la Cannebière</h3>
+                  <p>Nuit à partir de 25€</p>
+                  <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star grey"></i>
+                  </div>
+                </a>
+            </article>
+            <article class="Hôtel_du_port">
+                <a href="#" class="card" title="Hôtel du port">
+                    <img src="./images/hebergements/4_small/Hôtel_du_port.jpg">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de 58€</p>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </article>
+            <article class="Hôtel Les mouettes">
+                
+            </article>
+    </section>
+</body>
+
 </html>
