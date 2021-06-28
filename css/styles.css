@@ -5,7 +5,64 @@ html {
 
 body {
     font-size: 1rem;
+    display: ;
+}
+
+/* FONT */
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaythin_italic';
+    src: url('font/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('font/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+
+
+.has {
+    display: flex;
+    border: 1px solid black;
+    width: 25%;
+    height: 45px;
+    justify-content: space-between;
+    font-size: 1rem;
+    
+}
+
+.logo-container {
+    display: flex;
+    border: 1px solid black;
+}
+
+
+body {
+    font-family: 'ralewaythin';
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+   
+}
