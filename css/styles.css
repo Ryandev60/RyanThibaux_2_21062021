@@ -5,7 +5,10 @@ html {
 
 body {
     font-size: 1rem;
-    display: ;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    font-family:'ralewaythin';
 }
 
 /* FONT */
@@ -32,37 +35,142 @@ body {
     list-style-type: none;
 }
 
-header {
+/* HEADER*/
+
+.logo_has {
     display: flex;
     justify-content: space-between;
+
+}
+
+.logo_container {
+    margin-top: 2%;
+}
+
+.has {
+   width: 500px;
+   display: flex;
+   font-size: 1rem;
+   font-weight: 900;
+   
+}
+
+.lienspuces, .subscribe {
+    display: flex;
+}
+
+.lienspuces:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    font-family: #0065FC;
+}
+
+.liste1 {
     width: 100%;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.has a {
+    padding: 40px 30px 0px 30px;
 }
 
 
+.subscribe {
+    color: #0065FC;
+}
 
-.has {
+h1 {
+    margin-bottom: 0%;
+}
+
+.filter {
     display: flex;
-    border: 1px solid black;
-    width: 25%;
-    height: 45px;
     justify-content: space-between;
-    font-size: 1rem;
+    width: 55%;
     
 }
 
-.logo-container {
+.container_filter {
+    align-items: center;
+    justify-content: space-around;
+    height: 52px;
+    border-top: #e4e1e1 2px solid;
+    border-bottom: #e4e1e1 2px solid;
+    border-right: #e4e1e1 2px solid;
+    border-radius: 50px;
+    margin: 1.5% 3% 1.5% 0;
+}
+
+
+.icon_container_filter {
+    width: 52px;
+    height: 52px;
     display: flex;
-    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    border: #e4e1e1 2px transparent;
+    border-radius: 50px;
+    background-color: #deebff;
+    
+}
+
+.filter a {
+    margin: 10px;
+}
+
+.filter li {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+
+.information_container {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.icon_container_i {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    color: #0065FC;
+    
+}
+
+/* SECTION HEBERGEMENTS */
+
+.hebergements_a_marseille {
+    background: #CCC;
+    width: 70%;
+    margin-right: 0%;
+}
+
+.vignette {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 50% 50%;
 }
 
 
-body {
-    font-family: 'ralewaythin';
-    width: 90%;
-    margin: auto;
-    border: 1px solid black;
-   
+.vignette img {
+    width: 97%;
+    height: 60%;
 }
+
+
+
+
+
+
+
+
