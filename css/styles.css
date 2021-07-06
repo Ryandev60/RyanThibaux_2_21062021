@@ -5,9 +5,7 @@ html {
 
 body {
     font-size: 1rem;
-    width: 90%;
-    justify-content: center;
-    margin: auto;
+    margin: 0;
     font-family:Raleway,sans-serif;
 }
 
@@ -16,12 +14,46 @@ body {
     list-style-type: none;
 }
 
+.padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* MODIFICATION SUR ENSEMBLE */
+h2 {
+    margin: 40px 0px 30px 0px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+.rate i {
+    color: #0065FC;
+    margin: 0px;
+}
+
+.rate .grey {
+    color: #c9c7c7
+}
+
 /* HEADER*/
 
 .logo_has {
     display: flex;
     justify-content: space-between;
 
+}
+
+.bordertop .lienspuces {
+    color: #0065FC;
+    border-top:3px solid #0065FC;
 }
 
 .logo_container {
@@ -33,7 +65,6 @@ body {
    display: flex;
    font-size: 1rem;
    font-weight: 600;
-   
 }
 
 
@@ -45,7 +76,6 @@ body {
 .lienspuces:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    font-family: #0065FC;
 }
 
 .liste1 {
@@ -57,6 +87,7 @@ body {
 
 .has a {
     padding: 40px 30px 0px 30px;
+    border-top: 3px solid #ffffff;
 }
 
 
@@ -185,6 +216,7 @@ nav {
     width: 800px;
     font-size: 1.2rem;
     margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .icon_container_i {
@@ -200,39 +232,156 @@ nav {
     
     
 }
+/* GRID HEBERGEMENTS A MARSEILLE / LES PLUS POPULAIRES */
+
+.grid {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 1.5rem;
+}
+/* LES PLUS POPULAIRES */
+
+.les_plus_populaires {
+    background-color: #f0f0f0;
+    border: 2px #e4e1e1;
+    border-radius: 25px;
+    padding: 0px 25px 0px 25px;
+}
+
+.les_plus_populaires h2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 90%;
+    align-items: center;
+}
+
+.grid_populaires {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+}
+
+.populaires_vignettes {
+    display:flex;
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid #ffffff;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.les_plus_populaires img {
+    object-fit: cover;
+    width: 97%;
+    height: 160px;
+    border-radius: 15px 0px 0px 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.populaires_content {
+    display: flex;
+    height: 180px;
+    width: 50%;
+    height: 80%;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.populaires_vignettes a {
+    height: 170px;
+    width: 40%;
+}
+
+.les_plus_populaires h3 {
+    margin: 15px 0px 0px 0px
+}
+
+.populaires_vignettes i {
+    margin-top: 25px;
+}
 
 
 /* SECTION HEBERGEMENTS */
 
+
 .hebergements_a_marseille {
-    background: #CCC;
-    width: 80%;
+    background: #f0f0f0;
     border: 2px #e4e1e1;
     border-radius: 25px;
+    padding: 0px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
 }
 
-.hebergements_title {
-    margin: 40px 0px 20px 0px;
-}
 
-.hebergements_vignettes {
-  
-}
-
-.vignette {
+.vignettes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 50% 50%;
     grid-column-gap: 38px;
-    grid-row-gap: 38px;
+    grid-row-gap: 25px;
+}
+
+.hebergements_a_marseille img {
+    height: 140px;
+    width: 97%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 1.5%;
+}
+
+
+.content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 0px 19px;
+    color: #000;
+
+}
+
+.hebergements_a_marseille h3 {
+    margin: 0;
+    color: #000;
+}
+
+.hebergements_a_marseille p {
+    margin: 8px 0px 8px 0px;
+}
+
+
+.hebergements_vignettes {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+  
+}
+
+.hebergements_a_marseille p {
+    margin-bottom: 5px;
+}
+
+.hebergements_a_marseille button {
+    border: none;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
 }
   
 
 
-.vignette img {
-    max-width: 100%;
-    max-height: 100%;
-}
+
 
 
 
