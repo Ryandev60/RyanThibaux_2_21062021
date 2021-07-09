@@ -15,14 +15,13 @@ body {
 }
 
 .padding {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0% 3%
 }
 
 /* MODIFICATION SUR ENSEMBLE */
 
 h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #000;
 }
@@ -31,13 +30,27 @@ a {
     color: #000;
 }
 
+.rate {
+    display: flex;
+    justify-content: space-between;
+    width: 85px;
+}
 .rate i {
     color: #0065FC;
     margin: 0px;
+    font-size: 14px;
 }
 
 .rate .grey {
     color: #c9c7c7
+}
+
+.hebergements_vignettes:hover, .populaires_vignettes:hover, .activites_vignettes:hover {
+    box-shadow: rgb(139, 130, 130) 0px 0px 5px;
+}
+
+.container_filter,.icon_container_filter,.hebergements_vignettes,.populaires_vignettes,.activites_vignettes {
+    transition:0.5s
 }
 
 /* HEADER*/
@@ -47,6 +60,7 @@ a {
     justify-content: space-between;
 
 }
+
 
 .bordertop .lienspuces {
     color: #0065FC;
@@ -108,18 +122,19 @@ a {
 .searchbar {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #e4e1e1 ;
     width: 520px;
     height: 60px;
     border-radius: 20px;
     margin-bottom: 40px;
 }
 
+
 .icon_container_map {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #000;
+    height: 60px;
     width: 120px;
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
@@ -128,6 +143,8 @@ a {
 
 .searchForm {
     border: none;
+    border-top: 1px solid #e4e1e1;
+    border-bottom: 1px solid #e4e1e1;
     width: 300px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -137,11 +154,14 @@ a {
 
 input::placeholder {
     color: #000;
-    padding-left: 20px;
 }
 
 input[type="search"] {
     outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 .searchButton {
@@ -157,30 +177,39 @@ input[type="search"] {
     width: 300px;
 }
 
+.title_filter {
+    margin-right: 4%;
+}
+
 .filter {
     display: flex;
-    justify-content: space-between;
-    width: 66%;
+    width: 100%;
+    padding: 0;
     
 }
 
 .container_filter {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 52px;
+    margin-right: 4%;
+    height: 48px;
     border-top: #e4e1e1 2px solid;
     border-bottom: #e4e1e1 2px solid;
     border-right: #e4e1e1 2px solid;
     border-radius: 50px;
-    margin: 14px 28px 14px 0;
     cursor: pointer;
 }
+
+.container_filter:last-child {
+    margin: 0;
+}
+
 
 
 .icon_container_filter {
     width: 52px;
     height: 52px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,30 +220,31 @@ input[type="search"] {
     
 }
 
+
+.filter li:hover .icon_container_filter   {
+    background: #0065FC;
+}
+
+.filter li:hover i {
+    color: #deebff;
+    font-size: 24px;
+}
+
 .filter li:hover {
-    background: rgba(8, 8, 190, 0.432);
-    transition-duration: 1.5s;
-    font-size: 25px;
-    color: violet;
-     
+    background: #deebff;
 }
 
-.filter a:hover {
-    color: violet;
+.filter li:hover a {
+    color: #0065FC;
 }
-
 
 
 .filter a {
     margin: 0;
     font-weight: 800;
-    padding: 20px 30px 20px 20px;
+    padding: 10px 15px 10px 10px ;
     font-size: 18px;
 
-}
-
-.filter li {
-    display: flex;
 }
 
 nav {
@@ -251,18 +281,20 @@ nav {
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-gap: 1.5rem;
+    margin-bottom: 50px;
 }
 
 .grid h2 {
     margin: 40px 0px 30px 0px;
 }
+
 /* LES PLUS POPULAIRES */
 
 .les_plus_populaires {
     background-color: #f0f0f0;
     border: 2px #e4e1e1;
     border-radius: 25px;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 9.5%;
 }
 
 .les_plus_populaires h2 {
@@ -276,16 +308,14 @@ nav {
 .grid_populaires {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 25px;
+    grid-row-gap: 35px;
 }
 
 .populaires_vignettes {
     display:flex;
     background-color: #ffffff;
     border-radius: 25px;
-    border: 2px solid #ffffff;
-    margin-left: 25px;
-    margin-right: 25px;
+    border: 1px solid #ffffff;
     cursor: pointer;
 }
 
@@ -297,13 +327,16 @@ nav {
     padding: 5px 0px 5px 5px;
 }
 
-.populaires_content {
+.populaires_content  {
     display: flex;
-    height: 180px;
     width: 50%;
-    height: 80%;
     flex-direction: column;
     margin-left: 25px;
+}
+
+.populaires_content p {
+    padding-top: 10px;
+    margin: 0;
 }
 
 .populaires_vignettes a {
@@ -312,12 +345,10 @@ nav {
 }
 
 .les_plus_populaires h3 {
-    margin: 15px 0px 0px 0px
+    margin: 13px 0px 0px 0px
 }
 
-.populaires_vignettes i {
-    margin-top: 25px;
-}
+
 
 
 /* SECTION HEBERGEMENTS */
@@ -327,18 +358,17 @@ nav {
     background: #f0f0f0;
     border: 2px #e4e1e1;
     border-radius: 25px;
-    padding: 0px 52px 0px 52px;
+    padding: 0px 4%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 }
 
 
 .vignettes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-column-gap: 38px;
-    grid-row-gap: 25px;
+    grid-column-gap: 3.5%;
+    grid-row-gap: 35px;
 }
 
 .hebergements_a_marseille img {
@@ -353,7 +383,7 @@ nav {
 
 
 .content {
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -409,11 +439,13 @@ nav {
 
 .activites_vignettes img {
     border-radius: 25px 25px 0px 0px;
+    width: 100%;
 }
 
 .activites_vignettes {
     box-shadow: rgb(228, 228, 228) 0px 0px 8px;
     border-radius: 25px;
+    width: 22.5%;
 
 }
 
@@ -423,22 +455,19 @@ nav {
 
 .vignette_vp {
     display: flex;
-    height: 570px;
-    width: 380px;
     flex-direction: column;
 }
 
 .vignette_vp img {
     display: flex;
-    height: 500px;;
+    height: 500px;
     object-fit: cover;
 }
 
 .vignette_pomegues {
     display: flex;
     flex-direction: column;
-    height:290px ;
-    width: 380px;
+    width: 100%;
 }
 
 .vignette_pomegues img {
@@ -449,9 +478,8 @@ nav {
 
 .vignette_frioul {
     display: flex;
-    flex-direction: column;
-    height: 220px;
-    width: 380px;
+    flex-direction: column;;
+    width: 100%;
 }
 
 .vignette_frioul img {
@@ -464,13 +492,17 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 22.5%;
+}
+
+.fi .activites_vignettes {
+    width: 100%;
 }
 
 .vignette_np {
     display: flex;
     flex-direction: column;
-    height: 262px;
-    width: 380px;
+    width: 100%;
 }
 
 .vignette_np img {
@@ -482,6 +514,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 22.5%;
+}
+
+.np .activites_vignettes {
+    width: 100% ;
 }
 
 
@@ -516,6 +553,7 @@ footer {
 .footer_container ul {
     padding: 0;
 }
+
 
 
 
