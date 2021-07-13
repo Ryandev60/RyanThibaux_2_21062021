@@ -11,13 +11,13 @@ body {
 }
 
 .padding {
-    padding: 0% 3%
+    padding: 0 2.2rem;
 }
 
 /* MODIFICATION SUR ENSEMBLE */
 
 h3 {
-    font-size: 17px;
+    font-size: 1.06rem;
     font-weight: 700;
     color: #000;
 }
@@ -29,12 +29,12 @@ a {
 .rate {
     display: flex;
     justify-content: space-between;
-    width: 85px;
+    width: 5.31rem;
 }
 .rate i {
     color: #0065FC;
-    margin: 0px;
-    font-size: 14px;
+    margin: 0;
+    font-size: 0.875rem;
 }
 
 .rate .grey {
@@ -54,7 +54,7 @@ a {
 }
 
 .price {
-    font-size: 15px;
+    font-size: 0.93rem;
 }
 
 /* HEADER*/
@@ -74,7 +74,7 @@ a {
 }
 
 .logo_container {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     display: flex;
     width: 100%
 }
@@ -101,13 +101,13 @@ a {
 
 .trouvez {
     margin-bottom: 0%;
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 
 .enplein {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-top: 0.625rem;
+    margin-bottom: 1.875rem;
     font-weight: 500;
 }
 
@@ -115,9 +115,7 @@ a {
 
 .searchbar {
     display: flex;
-    width: 450px;
-    height: 55px;
-    margin-bottom:6px;
+    margin-bottom:0.375rem;
 }
 
 
@@ -126,22 +124,20 @@ a {
     align-items: center;
     justify-content: center;
     color: #000;
-    height: 55px;
-    width: 12.4%;
+    padding:0.5rem 1rem;
     background-color: #f2f2f2;
     border-radius: 20px 0px 0px 20px;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .searchForm {
     border: none;
     border-top: 1px solid #e4e1e1;
     border-bottom: 1px solid #e4e1e1;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    width: 55.8%;
     color: #000;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .searchButton {
@@ -150,11 +146,9 @@ a {
     background-color: #0065FC;
     font-family: Raleway;
     color: white;
-    font-size: 20px;
-    font-weight: 520;
-    height: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
     cursor: pointer;
-    width: 31.8%;
 }
 input::placeholder {
     color: #000;
@@ -180,7 +174,7 @@ input:focus::placeholder {
 }
 
 .title_filter {
-    margin:10px 0px 0px 0px;
+    margin: 0.625rem 0px 0px 0px;
 }
 
 .filter {
@@ -195,14 +189,14 @@ input:focus::placeholder {
 .container_filter {
     display: flex;
     align-items: center;
-    margin-right: 2%;
-    height: 48px;
+    margin-right: 1.875rem;
+    height: 3rem;
     border-top: #e4e1e1 2px solid;
     border-bottom: #e4e1e1 2px solid;
     border-right: #e4e1e1 2px solid;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .container_filter:last-child {
@@ -210,9 +204,9 @@ input:focus::placeholder {
 }
 
 .icon_container_filter {
-    width: 52px;
-    height: 52px;
-    font-size: 22px;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.375rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +224,7 @@ input:focus::placeholder {
 
 .filter li:hover i {
     color: #deebff;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .filter li:hover {
@@ -245,8 +239,8 @@ input:focus::placeholder {
 .filter a {
     margin: 0;
     font-weight: 800;
-    padding: 10px 20px 10px 15px ;
-    font-size: 18px;
+    padding: 0.625rem 1.25rem 0.625rem 1rem ;
+    font-size: 1.125rem;
 
 }
 
@@ -261,14 +255,14 @@ input:focus::placeholder {
 .information_container {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    font-size: 1.125rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.25rem;
 }
 
 .icon_container_i {
-    width: 26px;
-    height: 26px;
+    width: 1.625rem;
+    height: 1.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,13 +280,13 @@ input:focus::placeholder {
 
 .grid {
     display: grid;
-    grid-template-columns: 67% 33%;
-    grid-gap: 3%;
-    margin-bottom: 50px;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 2.2rem;
+    margin-bottom: 3.125rem;
 }
 
 .grid h2 {
-    margin: 40px 0px 30px 0px;
+    margin: 2.5rem 0 1.875rem 0;
 }
 
 /* LES PLUS POPULAIRES */
@@ -301,20 +295,14 @@ input:focus::placeholder {
     background-color: #f0f0f0;
     border: 2px #e4e1e1;
     border-radius: 25px;
-    padding: 0px 9.5%;
+    padding: 0 2.5rem;
 }
 
 .les_plus_populaires h2 {
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
-    width: 90%;
+    margin-left: 1.25rem;
     align-items: center;
-}
-
-.grid_populaires {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .populaires_vignettes {
@@ -323,36 +311,36 @@ input:focus::placeholder {
     border-radius: 25px;
     border: 1px solid #ffffff;
     cursor: pointer;
-    height: 162px;
-    margin-bottom: 35px;
+    height: 10.125rem;
+    margin-bottom: 2.2rem;
 }
 
 .les_plus_populaires img {
     object-fit: cover;
     width: 100%;
-    height: 152px;
+    height: 9.5rem;
     border-radius: 25px 0px 0px 25px;
     padding: 5px 0px 5px 5px;
 }
 
 .populaires_content  {
     display: flex;
-    width: 50%;
+    width: 60%;
     flex-direction: column;
     margin-left: 25px;
 }
 
 .populaires_content p {
-    padding-top: 10px;
+    padding-top: 0.625rem;
     margin: 0;
 }
 
 .populaires_vignettes a {
-    width: 50%;
+    width: 40%;
 }
 
 .les_plus_populaires h3 {
-    margin: 13px 0px 0px 0px
+    margin: 1.23rem 0 0 0
 }
 
 .les_plus_populaires .rate {
@@ -369,31 +357,31 @@ margin-bottom: 10%;
     background: #f0f0f0;
     border: 2px #e4e1e1;
     border-radius: 25px;
-    padding: 0px 4%;
+    padding: 0 2.18rem;
 }
 
 
 .vignettes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-column-gap: 3.5%;
+    grid-column-gap: 2.18rem;
 }
 
 .hebergements_a_marseille img {
-    height: 140px;
+    height: 8.75rem;
     width: 97%;
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    padding-top: 1.5%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
 }
 
 
 .content {
-    padding-top: 8px;
-    padding-bottom: 10px;
-    margin:0px 0px 0px 19px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.625rem;
+    margin:0px 0px 0px 1.19rem;
     color: #000;
 
 }
@@ -404,7 +392,7 @@ margin-bottom: 10%;
 }
 
 .hebergements_a_marseille p {
-    margin: 4px 0px 8px 0px;
+    margin: 0.25rem 0 0.5rem 0;
 }
 
 
@@ -419,11 +407,10 @@ margin-bottom: 10%;
 
 .hebergements_a_marseille button {
     border: none;
-    margin-bottom: 40px;
-    font-size: 20px;
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
-    width: 135px;
 }
 
 
@@ -433,7 +420,7 @@ margin-bottom: 10%;
 .activites_space {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .activites_vignettes img {
@@ -448,7 +435,7 @@ margin-bottom: 10%;
 }
 
 .activites_vignettes h3 {
-    padding-left: 20px;
+    padding: 0 1.25rem;
 }
 
 .vignette_vp {
@@ -458,7 +445,7 @@ margin-bottom: 10%;
 
 .vignette_vp img {
     display: flex;
-    height: 500px;
+    height: 31.25rem;
     object-fit: cover;
 }
 
@@ -470,7 +457,7 @@ margin-bottom: 10%;
 
 .vignette_pomegues img {
     display: flex;
-    height: 220px;
+    height: 13.75rem;
     object-fit: cover;
 }
 
@@ -482,7 +469,7 @@ margin-bottom: 10%;
 
 .vignette_frioul img {
     display: flex;
-    height: 150px;
+    height: 9.375rem;
     object-fit: cover;
 }
 
@@ -504,7 +491,7 @@ margin-bottom: 10%;
 }
 
 .vignette_np img {
-    height: 192px;
+    height: 12rem;
     object-fit: cover;
 }
 
@@ -539,13 +526,13 @@ footer {
 
 
 .footer_container h3 {
-    font-size:25px ;
-    margin: 35px 0px 0px 0px;
+    font-size:1.6rem ;
+    margin: 2.18rem 0px 0px 0px;
 }
 
 .footer_container li {
-    font-size: 18px;
-    padding: 8px 0px 8px 0px;
+    font-size: 1.125rem;
+    padding: 0.5rem 0 0.5rem 0;
     margin: 0;
 }
 
@@ -560,31 +547,23 @@ footer {
     .grid {
         grid-template-columns: 1fr;
     }
-    header {
-        position: relative;
-        z-index: 4;
-    }
-
+    
     .les_plus_populaires {
         padding: 0px 4%;
-        position: relative;
-        z-index: 3;
         margin-bottom: 50px;
     }
 
     .hebergements_a_marseille {
         position: relative; 
-        z-index: 2;
     }
     
 }   
-    @media screen and (max-width:900px) {
+    @media screen and (max-width:1024px) {
     .activites_space {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
         position: relative;
-        z-index: 1;
     }
 
     .activites_vignettes {
@@ -624,7 +603,7 @@ footer {
     }
 }
 
-@media  screen and (max-width:600px) {
+@media  screen and (max-width:767px) {
 
     .padding {
         padding: 0px;
