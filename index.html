@@ -23,22 +23,18 @@
 
 <body>
     <div class="padding">
+
         <!-- HEADER -->
+
         <header>
-            <div class="logo_has">
+            <nav class="logo_has">
                 <div class="logo_container">
-                    <a href="#">
-                        <img src="./images/logo/Reservia.svg" alt="Logo Reservia" />
-                    </a>
+                    <a href="#"><img src="./images/logo/Reservia.svg" alt="Logo Reservia" /></a>
                 </div>
-                <nav class="has">
-                    <ul class="liste1">
-                        <li class="bordertop"><a href="#hebergements" class="lienspuces">Hébergements</a></li>
-                        <li><a href="#activites" class="lienspuces">Activités</a></li>
-                        <li><a href="#" class="subscribe">S'inscrire</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <a href="#hebergements" class="hebergements_nav">Hébergements</a>
+                <a href="#activites" class="activites_nav">Activités</a>
+                <a href="#" class="subscribe_nav">S'inscrire</a>
+            </nav>
             <h1 class="trouvez">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="enplein">En plein centre ville ou en pleine nature</p>
             <div class="searchbar">
@@ -48,9 +44,11 @@
                 <input class="searchForm" type="search" placeholder="Marseille, France" />
                 <input class="searchButton" type="button" value="Rechercher" />
             </div>
-            <nav>
-                <h2 class="title_filter">Filtres</h2>
+            <nav class="filter_bar">
                 <ul class="filter">
+                    <li class="title_li">
+                        <h2 class="title_filter">Filtres</h2>
+                    </li>
                     <li class="container_filter">
                         <div class="icon_container_filter">
                             <i class="fas fa-money-bill-wave"></i>
@@ -78,13 +76,17 @@
                 </ul>
             </nav>
             <div class="information_container">
-                <div class="icon_container_i">
-                    <i class="fas fa-info"></i>
+                <div class="block_i">
+                    <div class="icon_container_i">
+                        <i class="fas fa-info"></i>
+                    </div>
                 </div>
                 <p class="information">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
+
         <!-- SECTION HEBERGEMENTS A MARSEILLE -->
+
         <div class="grid">
             <section id="hebergements" class="hebergements_a_marseille">
                 <h2 class="hebergements_title">Hébergements à Marseille</h2>
@@ -96,7 +98,7 @@
                         </a>
                         <div class="content">
                             <h3><a href="#">Auberge la Cannebière</a></h3>
-                            <p class="price"><a href="#"> Nuit à partir de <strong>25€</strong></a></p>
+                            <p class="price"><a href="#"> Nuit à partir de <span class="weight">25€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -113,7 +115,7 @@
                         </a>
                         <div class="content">
                             <h3><a href="#">Hôtel du port</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 52<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 52<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 5/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -130,7 +132,7 @@
                         </a>
                         <div class="content">
                             <h3><a href="#">Hôtel Les mouettes</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 76<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 76<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -147,7 +149,7 @@
                         </a>
                         <div class="content">
                             <h3><a href="#">Hôtel de la mer</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 46<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 46<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 3/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -164,7 +166,7 @@
                         </a>
                         <div class="content">
                             <h3><a href="#">Auberge Le Panier</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de <strong>23€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de <span class="weight">23€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -181,7 +183,7 @@
                         </a>
                         <div class="content">
                             <h3><a href="#">Hôtel chez Amina</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 96<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 96<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 5/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -194,7 +196,9 @@
                 </div>
                 <button title="Cliquez pour afficher plus de logements">Afficher plus</button>
             </section>
+
             <!-- SECTION LES PLUS POPULAIRES -->
+
             <section class="les_plus_populaires">
                 <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <div class="grid_populaires">
@@ -205,7 +209,7 @@
                         </a>
                         <div class="populaires_content">
                             <h3><a href="#">Hôtel Le soleil du matin</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 128<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 128<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 5/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -222,7 +226,7 @@
                         </a>
                         <div class="populaires_content">
                             <h3><a href="#">Au coeur de l'eau Chambres d'hôtes</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 71<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 71<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -239,7 +243,7 @@
                         </a>
                         <div class="populaires_content">
                             <h3><a href="#">Hôtel Tout bleu et Blanc</a></h3>
-                            <p class="price"><a href="#">Nuit à partir de 68<strong>€</strong></a></p>
+                            <p class="price"><a href="#">Nuit à partir de 68<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -252,60 +256,63 @@
                 </div>
             </section>
         </div>
+
         <!-- SECTION ACTIVITES A MARSEILLE -->
-        <h2>Activités à Marseille</h2>
-        <section class="activites_a_marseille"></section>
-        <div class="activites_space">
-            <article class="activites_vignettes">
-                <a href="#" class="vignette_vp" title="Vieux Port">
-                    <img src="./images/activites/Vieux_Port.jpg"
-                        alt="Photo du Vieux Port de Marseille avec plusieurs bâteaux">
-                    <h3>Vieux Port</h3>
-                </a>
-            </article>
-            <div class="fi">
+
+        <section id="activites" class="activites_a_marseille">
+            <h2>Activités à Marseille</h2>
+            <div class="activites_space">
                 <article class="activites_vignettes">
-                    <a href="#" class="vignette_pomegues">
-                        <img src="./images/activites/Fort_de_Pomègues.jpg"
-                            alt="Photo du Fort de Pomègues, Fort situé au sommet d'une falaise rocheuse">
-                        <h3>Fort de Pomègues</h3>
+                    <a href="#" class="vignette_vp" title="Vieux Port">
+                        <img src="./images/activites/Vieux_Port.jpg"
+                            alt="Photo du Vieux Port de Marseille avec plusieurs bâteaux">
+                        <h3>Vieux Port</h3>
                     </a>
                 </article>
+                <div class="fi">
+                    <article class="activites_vignettes">
+                        <a href="#" class="vignette_pomegues">
+                            <img src="./images/activites/Fort_de_Pomègues.jpg"
+                                alt="Photo du Fort de Pomègues, Fort situé au sommet d'une falaise rocheuse">
+                            <h3>Fort de Pomègues</h3>
+                        </a>
+                    </article>
+                    <article class="activites_vignettes">
+                        <a href="#" class="vignette_frioul">
+                            <img src="./images/activites/Îles_du_Frioul.jpg"
+                                alt="Vue de loin sur la magnifique Îles du Frioul">
+                            <h3>Îles du Frioul</h3>
+                        </a>
+                    </article>
+                </div>
                 <article class="activites_vignettes">
-                    <a href="#" class="vignette_frioul">
-                        <img src="./images/activites/Îles_du_Frioul.jpg"
-                            alt="Vue de loin sur la magnifique Îles du Frioul">
-                        <h3>Îles du Frioul</h3>
+                    <a href="#" class="vignette_vp">
+                        <img src="./images/activites/Parc_National_des_Calanques.jpg"
+                            alt="Photo de la magnifique vue sur le Parc National des Calanques">
+                        <h3>Parc National des Calanques</h3>
                     </a>
                 </article>
+                <div class="np">
+                    <article class="activites_vignettes">
+                        <a href="#" class="vignette_np">
+                            <img src="./images/activites/Notre_Dame_de_la_Garde.jpg"
+                                alt="Vue magnifique sur Notre-Dame-de-la-Garde en second plan, avec en premier plan la ville de Marseille">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </a>
+                    </article>
+                    <article class="activites_vignettes">
+                        <a href="#" class="vignette_np">
+                            <img src="./images/activites/Parc_Longchamp.jpg" alt="Vue sur le magnifique Parc Longchamp">
+                            <h3>Parc Longchamp</h3>
+                        </a>
+                    </article>
+                </div>
             </div>
-            <article class="activites_vignettes">
-                <a href="#" class="vignette_vp">
-                    <img src="./images/activites/Parc_National_des_Calanques.jpg"
-                        alt="Photo de la magnifique vue sur le Parc National des Calanques">
-                    <h3>Parc National des Calanques</h3>
-                </a>
-            </article>
-            <div class="np">
-                <article class="activites_vignettes">
-                    <a href="#" class="vignette_np">
-                        <img src="./images/activites/Notre_Dame_de_la_Garde.jpg"
-                            alt="Vue magnifique sur Notre-Dame-de-la-Garde en second plan, avec en premier plan la ville de Marseille">
-                        <h3>Notre-Dame-de-la-Garde</h3>
-                    </a>
-                </article>
-                <article class="activites_vignettes">
-                    <a href="#" class="vignette_np">
-                        <img src="./images/activites/Parc_Longchamp.jpg"
-                            alt="Vue sur le magnifique Parc Longchamp">
-                        <h3>Parc Longchamp</h3>
-                    </a>
-                </article>
-            </div>
-        </div>
         </section>
     </div>
+
     <!-- FOOTER -->
+
     <footer>
         <div class="footer_container">
             <h3>A propos</h3>
@@ -330,7 +337,6 @@
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
