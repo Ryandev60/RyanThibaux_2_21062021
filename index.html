@@ -31,8 +31,8 @@
                 <div class="logo_container">
                     <a href="#"><img src="./images/logo/reservia.svg" alt="Logo Reservia" /></a>
                 </div>
-                <a href="#hebergements" class="hebergements_nav">Hébergements</a>
-                <a href="#activites" class="activites_nav">Activités</a>
+                <a href="#hebergements" class="lodging_nav">Hébergements</a>
+                <a href="#activites" class="activities_nav">Activités</a>
                 <a href="#" class="subscribe_nav">S'inscrire</a>
             </nav>
             <h1 class="trouvez">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -41,14 +41,12 @@
                 <div class="icon_container_map">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <input class="searchForm" type="search" placeholder="Marseille, France" />
-                <input class="searchButton" type="button" value="Rechercher" />
+                <input class="search_form" type="search" placeholder="Marseille, France" />
+                <button class="search_button"><span class="search_logo"> <i class="fas fa-search"></i></span><span class="search_text">Rechercher</span></button>
             </div>
             <nav class="filter_bar">
+                <h2 class="title_filter">Filtres</h2>
                 <ul class="filter">
-                    <li class="title_li">
-                        <h2 class="title_filter">Filtres</h2>
-                    </li>
                     <li class="container_filter">
                         <div class="icon_container_filter">
                             <i class="fas fa-money-bill-wave"></i>
@@ -87,16 +85,16 @@
 
         <!-- SECTION HEBERGEMENTS A MARSEILLE -->
 
-        <div class="grid">
-            <section id="hebergements" class="hebergements_a_marseille">
-                <h2 class="hebergements_title">Hébergements à Marseille</h2>
-                <div class="vignettes">
-                    <article class="hebergements_vignettes">
-                        <a href="#" title="Auberge la cannebière">
-                            <img src="./images/hebergements/auberge_la_cannebière.jpg"
+        <div class="grid_marseille_populaires">
+            <section id="hebergements" class="marseille_lodging">
+                <h2 class="lodging_title">Hébergements à Marseille</h2>
+                <div class="grid_marseille">
+                    <article class="lodging_card">
+                        <a href="#" class="lodging_a_img" title="Auberge la cannebière">
+                            <img src="./images/hebergements/auberge_la_cannebiere.jpg"
                                 alt="Photo de l'Auberge la Cannebière,chambre avec un lit superposé avec une fenêtre qui donne la vue sur la ville de Marseille">
                         </a>
-                        <div class="content">
+                        <div class="marseille_content">
                             <h3><a href="#">Auberge la Cannebière</a></h3>
                             <p class="price"><a href="#"> Nuit à partir de <span class="weight">25€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
@@ -108,12 +106,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="hebergements_vignettes">
-                        <a href="#" title="hotel du port">
+                    <article class="lodging_card">
+                        <a href="#" class="lodging_a_img" title="Hôtel du port">
                             <img src="./images/hebergements/hotel_du_port.jpg"
                                 alt="Photo de l'Hôtel du port, chambre grise avec deux lits simples ">
                         </a>
-                        <div class="content">
+                        <div class="marseille_content">
                             <h3><a href="#">Hôtel du port</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 52<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 5/5">
@@ -125,12 +123,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="hebergements_vignettes">
-                        <a href="#" title="Hôtel Les Mouettes">
+                    <article class="lodging_card">
+                        <a href="#" class="lodging_a_img" title="Hôtel Les Mouettes">
                             <img src="./images/hebergements/hotel_les_mouettes.jpg"
                                 alt="Photo de l'Hôtel Les mouettes, chambre marron clair avec un lit 2 personnes ">
                         </a>
-                        <div class="content">
+                        <div class="marseille_content">
                             <h3><a href="#">Hôtel Les mouettes</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 76<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
@@ -142,12 +140,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="hebergements_vignettes">
-                        <a href="#" title="Hôtel de la mer">
+                    <article class="lodging_card">
+                        <a href="#" class="lodging_a_img" title="Hôtel de la mer">
                             <img src="./images/hebergements/hotel_de_la_mer.jpg"
                                 alt="Photo de l'Hôtel de la mer,chambre avec un lit 2 personnes dans le théme de la mer">
                         </a>
-                        <div class="content">
+                        <div class="marseille_content">
                             <h3><a href="#">Hôtel de la mer</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 46<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 3/5">
@@ -159,12 +157,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="hebergements_vignettes">
-                        <a href="#" title="Auberge Le Panier">
+                    <article class="lodging_card">
+                        <a href="#" class="lodging_a_img" title="Auberge Le Panier">
                             <img src="./images/hebergements/auberge_le_panier.jpg"
                                 alt="Photo de l'Auberge Le Panier, chambre avec 2 lits superposés théme bois">
                         </a>
-                        <div class="content">
+                        <div class="marseille_content">
                             <h3><a href="#">Auberge Le Panier</a></h3>
                             <p class="price"><a href="#">Nuit à partir de <span class="weight">23€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
@@ -176,12 +174,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="hebergements_vignettes">
-                        <a href="#" title="Hôtel chez Amina">
+                    <article class="lodging_card">
+                        <a href="#" class="lodging_a_img" title="Hôtel chez Amina">
                             <img src="./images/hebergements/hotel_chez_amina.jpg"
                                 alt="Photo de l'Hôtel chez Amina, chambre avec 2 lits simples, dans les couleurs blanches et marrons">
                         </a>
-                        <div class="content">
+                        <div class="marseille_content">
                             <h3><a href="#">Hôtel chez Amina</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 96<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 5/5">
@@ -199,15 +197,15 @@
 
             <!-- SECTION LES PLUS POPULAIRES -->
 
-            <section class="les_plus_populaires">
+            <section class="popular">
                 <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <div class="grid_populaires">
-                    <article class="populaires_vignettes">
-                        <a href="#" title="Hôtel Le soleil du matin">
-                            <img src="./images/hebergements/hotel_le_soleil_du_matin.jpg"
+                    <article class="popular_card">
+                        <a href="#" class="populaires_a_img" title="Hôtel Le soleil du matin">
+                            <img src="./images/hebergements/hotel_le_soleil.jpg"
                                 alt="Photo de l'Hôtel Le soleil du matin,chambre aux couleurs vertes et dorées avec un lit 2 personnes">
                         </a>
-                        <div class="populaires_content">
+                        <div class="popular_content">
                             <h3><a href="#">Hôtel Le soleil du matin</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 128<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 5/5">
@@ -219,12 +217,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="populaires_vignettes">
-                        <a href="#" title="Au coeur de l'eau Chambres d'hotes">
-                            <img src="./images/hebergements/au_coeur_de_l'eau_chambres_d'hôtes.jpg"
+                    <article class="popular_card">
+                        <a href="#" class="populaires_a_img" title="Au coeur de l'eau Chambres d'hotes">
+                            <img src="./images/hebergements/au_coeur_de_l'eau.jpg"
                                 alt="Photo de Au coeur de l'eau Chambre d'hôtes, chambre grise marron clair et noir avec un lit 2 personnes">
                         </a>
-                        <div class="populaires_content">
+                        <div class="popular_content">
                             <h3><a href="#">Au coeur de l'eau Chambres d'hôtes</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 71<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
@@ -236,12 +234,12 @@
                             </div>
                         </div>
                     </article>
-                    <article class="populaires_vignettes">
-                        <a href="#" title="Hôtel Tout bleu et Blanc">
-                            <img src="./images/hebergements/hotel_tout_bleu_et_blanc.jpg"
+                    <article class="popular_card">
+                        <a href="#" class="populaires_a_img" title="Hôtel Tout bleu et Blanc">
+                            <img src="./images/hebergements/hotel_tout_bleu.jpg"
                                 alt="Photo de l'Hôtel Tout bleu et Blanc, chambre blanche simple avec un lit 2 personnes">
                         </a>
-                        <div class="populaires_content">
+                        <div class="popular_content">
                             <h3><a href="#">Hôtel Tout bleu et Blanc</a></h3>
                             <p class="price"><a href="#">Nuit à partir de 68<span class="weight">€</span></a></p>
                             <div class="rate" title="Logement noté 4/5">
@@ -259,49 +257,49 @@
 
         <!-- SECTION ACTIVITES A MARSEILLE -->
 
-        <section id="activites" class="activites_a_marseille">
+        <section id="activites" class="activities">
             <h2>Activités à Marseille</h2>
-            <div class="activites_space">
-                <article class="activites_vignettes">
-                    <a href="#" class="vignette_vp" title="Vieux Port">
+            <div class="activities_space">
+                <article class="activities_card">
+                    <a href="#" class="card_vp" title="Vieux Port">
                         <img src="./images/activites/vieux_port.jpg"
                             alt="Photo du Vieux Port de Marseille avec plusieurs bâteaux">
                         <h3>Vieux Port</h3>
                     </a>
                 </article>
                 <div class="fi">
-                    <article class="activites_vignettes">
-                        <a href="#" class="vignette_pomegues">
+                    <article class="activities_card">
+                        <a href="#" class="card_pomegues">
                             <img src="./images/activites/fort_de_pomegues.jpg"
                                 alt="Photo du Fort de Pomègues, Fort situé au sommet d'une falaise rocheuse">
                             <h3>Fort de Pomègues</h3>
                         </a>
                     </article>
-                    <article class="activites_vignettes">
-                        <a href="#" class="vignette_frioul">
+                    <article class="activities_card">
+                        <a href="#" class="card_frioul">
                             <img src="./images/activites/iles_du_frioul.jpg"
                                 alt="Vue de loin sur la magnifique Îles du Frioul">
                             <h3>Îles du Frioul</h3>
                         </a>
                     </article>
                 </div>
-                <article class="activites_vignettes">
-                    <a href="#" class="vignette_vp">
+                <article class="activities_card">
+                    <a href="#" class="card_vp">
                         <img src="./images/activites/parc_national_des_calanques.jpg"
                             alt="Photo de la magnifique vue sur le Parc National des Calanques">
                         <h3>Parc National des Calanques</h3>
                     </a>
                 </article>
                 <div class="np">
-                    <article class="activites_vignettes">
-                        <a href="#" class="vignette_np">
+                    <article class="activities_card">
+                        <a href="#" class="card_np">
                             <img src="./images/activites/notre_dame_de_la_garde.jpg"
                                 alt="Vue magnifique sur Notre-Dame-de-la-Garde en second plan, avec en premier plan la ville de Marseille">
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </a>
                     </article>
-                    <article class="activites_vignettes">
-                        <a href="#" class="vignette_np">
+                    <article class="activities_card">
+                        <a href="#" class="card_np">
                             <img src="./images/activites/parc_longchamp.jpg" alt="Vue sur le magnifique Parc Longchamp">
                             <h3>Parc Longchamp</h3>
                         </a>
