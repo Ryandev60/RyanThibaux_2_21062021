@@ -179,6 +179,8 @@ input:focus::placeholder {
 .title_filter {
     padding-top: 1.3rem;
     font-size: 1.3rem;
+    margin-right: 2rem;
+    padding: 1.3rem 0 0 1rem;
 }
 
 .filter {
@@ -193,6 +195,7 @@ input:focus::placeholder {
     display: flex;
     align-items: center;
     margin-right: 1.9rem;
+    margin-bottom: 0.2rem;
     height: 2.75rem;
     border-top: #c9c7c7 2px solid;
     border-bottom: #c9c7c7 2px solid;
@@ -510,12 +513,15 @@ footer {
 .footer_container {
     display: flex;
     flex-direction: column;
-    padding: 1.25rem 3.8rem 0 7.6rem;
-    
+    padding: 1.25rem 3.8rem 0 11rem;
+}
+
+.footer_container:first-child {
+    padding-left: 3rem;
 }
 
 .footer_container h3 {
-    font-size:1.6rem ;
+    font-size: 1.3rem ;
     margin: 0;
 }
 
@@ -537,6 +543,11 @@ footer {
     .grid_marseille_populaires {
         grid-template-columns: 1fr;
     }
+
+    .footer_container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }   
     /* PASSAGE EN COLOMNE POUR ECRAN DE TABLETTE */
 
@@ -544,6 +555,12 @@ footer {
 
     .padding {
         padding: 0 2rem;
+    }
+
+    /*FILTRES*/
+
+    .title_filter {
+        padding-left: 0;
     }
 
     .activities_space {
@@ -585,13 +602,13 @@ footer {
         padding: 0;
     }
 
-    .logo_container, .subscribe_nav, .trouvez, .enplein, .filter_bar, .information_container, .activities  {
+    .logo_container, .subscribe_nav, .trouvez, .enplein, .filter_bar, .activities  {
         padding: 0 1rem
     }
 
     /* BARRE DE NAVIGATION AU TOP */
 
-    .logo_container, .subscribe_nav, {
+    .logo_container, .subscribe_nav {
         padding-right: 0;
     }
 
@@ -687,7 +704,7 @@ footer {
     }
 
     .container_filter {
-        margin-right: 0.5rem;
+        margin-right: 1rem;
     }
 
     /* INFORMATION */
@@ -752,16 +769,15 @@ footer {
     .activities_card img {
         height:9rem
     }
-    
+
+    /* MODIFICATION MINEUR POUR PETIT SMARTPHONE */
+
     @media screen and (max-width:350px) {
         
-        /* MODIFICATION MINEUR POUR PETIT SMARTPHONE */
-
         .search_form {
             padding-left: 0.75rem;
             font-size: 1rem;
         }
-        
     }
     
     
