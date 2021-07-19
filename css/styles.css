@@ -244,8 +244,8 @@ input:focus::placeholder {
 .filter a {
     margin: 0;
     font-weight: 700;
-    padding: 0.625rem 1rem 0.625rem 0.62rem ;
-    font-size: 1rem;
+    padding: 0.625rem 1.2rem 0.625rem 0.8rem ;
+    font-size: 1.1rem;
 }
 
 /* TEXTE INFORMATION */
@@ -278,14 +278,14 @@ input:focus::placeholder {
     display: grid;
     grid-template-columns: 6.8fr 3.2fr;
     grid-gap: 2.2rem;
-    margin-bottom: 3.125rem;
+    margin-bottom: 4rem;
 }
 
 .grid_marseille_populaires h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0 0.5rem 0.2rem ;
+    padding: 2rem 0 0.5rem 0.2rem ;
 }
 
 /* LES PLUS POPULAIRES */
@@ -405,6 +405,7 @@ input:focus::placeholder {
 
 .marseille_lodging button {
     border: none;
+    margin-top: 0.25rem;
     margin-bottom: 2.5rem;
     font-size: 1.25rem;
     font-weight: 700;
@@ -420,6 +421,10 @@ input:focus::placeholder {
     margin-bottom: 3.75rem;
 }
 
+.activities h2 {
+    margin-bottom: 1.5rem;
+}
+
 .activities_card img {
     border-radius: 25px 25px 0px 0px;
 }
@@ -427,7 +432,7 @@ input:focus::placeholder {
 .activities_card {
     box-shadow: rgb(228, 228, 228) 0px 0px 8px;
     border-radius: 25px;
-    width: 22.5%;
+    width: 22.75%;;
 }
 
 .activities_card h3 {
@@ -472,7 +477,7 @@ input:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22.5%;
+    width: 22.75%;;
 }
 
 .fi .activities_card {
@@ -493,7 +498,7 @@ input:focus::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22.5%;
+    width: 22.75%;;
 }
 
 .np .activities_card {
@@ -553,6 +558,10 @@ footer {
 
     @media screen and (max-width:1024px) {
 
+    * {
+        transition: none;
+    }
+
     .padding {
         padding: 0 2rem;
     }
@@ -563,9 +572,24 @@ footer {
         padding-left: 0;
     }
 
+    /* HEBERGEMENTS A MARSEILLE */
+
+    .grid_marseille {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* LES PLUS POPULAIRES */
+
+    .popular_card {
+        height: 10.625rem;
+    }
+
+    /*ACTIVITES*/
+
     .activities_space {
         display: grid;
         grid-template-columns: 1fr;
+        margin-bottom: 1.5rem;
     }
 
     .activities_card {
@@ -586,17 +610,11 @@ footer {
         width: auto;
     }
 
-    .grid_marseille {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .popular_card {
-        height: 10.625rem;
-    }
-
     /* MODIFICATIONS POUR ECRAN DE SMARTPHONE */
 
 @media  screen and (max-width:767px) {
+
+    /* PADDING SUR LES COTES */
 
     .padding {
         padding: 0;
@@ -701,6 +719,7 @@ footer {
 
     .filter a {
         font-size: 1rem;
+        padding: 0.625rem 1rem 0.625rem 0.625rem;
     }
 
     .container_filter {
@@ -715,6 +734,13 @@ footer {
 
     .icon_container_i {
         margin-top: 1rem;
+    }
+
+    /* GRID HEBEGEMENTS A MARSEILLE ET LES PLUS POPULAIRES */
+
+    .grid_marseille_populaires {
+        grid-gap: 0;
+        margin-bottom: 0;
     }
 
     /* SECTION LES PLUS POPULAIRES */
@@ -762,12 +788,12 @@ footer {
     /* SECTION ACTIVITES */
 
     .activities_card {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         height: auto ;
     }
 
     .activities_card img {
-        height:9rem
+        height:8.5rem
     }
 
     /* MODIFICATION MINEUR POUR PETIT SMARTPHONE */
