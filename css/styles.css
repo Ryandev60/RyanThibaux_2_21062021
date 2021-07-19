@@ -46,7 +46,7 @@ a {
     box-shadow: rgb(139, 130, 130) 0 0 5px;
 }
 
-.container_filter,.icon_container_filter,.lodging_card,.popular_card,.activities_card {
+.search_button, .icon_container_filter, .container_filter, .lodging_card, .popular_card, .activities_card {
     transition:0.5s
 }
 
@@ -79,16 +79,11 @@ a {
     width: 100%;
 }
 
-.lodging_nav   {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
-}
-
-.activities_nav, .subscribe_nav {
+.lodging_nav, .activities_nav, .subscribe_nav {
     border-top: 3px solid #ffffff;
 }
 
-.activities_nav:hover {
+.lodging_nav:hover, .activities_nav:hover, .subscribe_nav:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
@@ -152,17 +147,18 @@ a {
     padding: 0 0.75rem;
 }
 
+.search_button:hover {
+    opacity: 0.7;
+}
+
 .search_logo {
     display: none;
 }
 
-input::placeholder {
+input.search_form::placeholder {
     color: #000;
     font-weight: 700;
-}
-
-input[type="search"] {
-    outline: none;
+    opacity: 1;
 }
 
 input:focus::placeholder {
@@ -529,6 +525,10 @@ footer {
     padding: 0.5rem 0 0.5rem 0;
 }
 
+.footer_container li:hover {
+    text-decoration: underline 2px #000;
+}
+
 .footer_container ul {
     padding: 0;
 }
@@ -632,12 +632,19 @@ footer {
         order: -1;
     }
 
+    .logo_has a:nth-child(4):hover {
+        border-top: 3px solid #ffffff;
+    }
+
     .logo_has a:nth-child(2) {
         padding: 25px 0 12px 0;
         display: flex;
         justify-content: center;
         border-top: none;
-        border-bottom: 3px solid #0065FC ;
+        border-bottom: 3px solid #f2f2f2 ;
+    }
+    .logo_has a:nth-child(2):hover {
+        border-bottom: 3px solid #0065FC;
     }
 
     .logo_has a:nth-child(3) {
