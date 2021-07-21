@@ -545,13 +545,14 @@ footer {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-}   
-    /* PASSAGE EN COLOMNE POUR ECRAN DE TABLETTE */
+}  
 
-    @media screen and (max-width:1024px) {
+ /* PASSAGE EN COLOMNE POUR ECRAN DE TABLETTE */
+
+ @media screen and (max-width:1024px) {
 
     * {
-        transition: none;
+      transition: none;
     }
 
     .padding {
@@ -602,9 +603,11 @@ footer {
         width: auto;
     }
 
-    /* MODIFICATIONS POUR ECRAN DE SMARTPHONE */
+}
 
-@media  screen and (max-width:767px) {
+/* MODIFICATIONS POUR ECRAN DE SMARTPHONE */
+
+ @media  screen and (max-width:767px) {
 
     /* PADDING SUR LES COTES */
 
@@ -794,14 +797,14 @@ footer {
     .activities_card img {
         height:8.5rem
     }
+}
 
-    /* MODIFICATION MINEUR POUR PETIT SMARTPHONE */
+ /* MODIFICATION MINEUR POUR PETIT SMARTPHONE */
 
-    @media screen and (max-width:350px) {
+ @media screen and (max-width:350px) {
         
-        .search_form {
-            padding-left: 0.75rem;
-            font-size: 1rem;
-        }
-
-        
+     .search_form {
+         padding-left: 0.75rem;
+        font-size: 1rem;
+     }
+ }
