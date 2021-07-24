@@ -285,7 +285,6 @@ input:focus::placeholder {
 
 .popular {
     background-color: #F2F2F2;
-    border: 2px #e4e1e1;
     border-radius: 25px;
     padding: 0 2.5rem;
 }
